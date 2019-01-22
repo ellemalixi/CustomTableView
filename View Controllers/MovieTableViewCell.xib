@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" id="KGk-i7-Jjw" customClass="MovieTableViewCell" customModule="CustomTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="239.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPr-HC-djD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="239.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eet-gR-x5U">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="161" id="F39-7H-DSB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBY-Lh-WBJ">
+                                <rect key="frame" x="8" y="169" width="359" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ffA-MZ-nyo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ei6-vM-SaC">
+                                <rect key="frame" x="8" y="198" width="359" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="nb8-DW-0qa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eet-gR-x5U" firstAttribute="leading" secondItem="GPr-HC-djD" secondAttribute="leading" id="8gt-Nt-kR8"/>
+                            <constraint firstItem="Ei6-vM-SaC" firstAttribute="top" secondItem="eBY-Lh-WBJ" secondAttribute="bottom" constant="8" id="9kk-TF-guY"/>
+                            <constraint firstItem="eBY-Lh-WBJ" firstAttribute="leading" secondItem="GPr-HC-djD" secondAttribute="leading" constant="8" id="IM8-Bb-UKX"/>
+                            <constraint firstAttribute="trailing" secondItem="Ei6-vM-SaC" secondAttribute="trailing" constant="8" id="Lzq-zD-gS3"/>
+                            <constraint firstItem="Ei6-vM-SaC" firstAttribute="leading" secondItem="GPr-HC-djD" secondAttribute="leading" constant="8" id="NfZ-0V-X9K"/>
+                            <constraint firstItem="eBY-Lh-WBJ" firstAttribute="top" secondItem="eet-gR-x5U" secondAttribute="bottom" constant="8" id="TXR-fP-uTJ"/>
+                            <constraint firstAttribute="trailing" secondItem="eet-gR-x5U" secondAttribute="trailing" id="Tcp-LC-ALY"/>
+                            <constraint firstAttribute="trailing" secondItem="eBY-Lh-WBJ" secondAttribute="trailing" constant="8" id="Uq5-sC-uCW"/>
+                            <constraint firstItem="eet-gR-x5U" firstAttribute="top" secondItem="GPr-HC-djD" secondAttribute="top" id="rLc-D0-wWl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="GPr-HC-djD" secondAttribute="trailing" id="Bql-Kv-AE2"/>
+                    <constraint firstItem="GPr-HC-djD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YHF-v2-jDh"/>
+                    <constraint firstAttribute="bottom" secondItem="GPr-HC-djD" secondAttribute="bottom" id="kUN-SL-wIF"/>
+                    <constraint firstItem="GPr-HC-djD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uhb-ut-JOF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="movieTitle" destination="eBY-Lh-WBJ" id="A3q-Zo-EnU"/>
+                <outlet property="posterImg" destination="eet-gR-x5U" id="ClV-NK-pfQ"/>
+                <outlet property="year" destination="Ei6-vM-SaC" id="JAW-6X-VBB"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="153.82308845577214"/>
+        </tableViewCell>
+    </objects>
+</document>
